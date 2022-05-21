@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="SavedPhoto" representedClassName="SavedPhoto" syncable="YES" codeGenerationType="class">
+        <attribute name="farm" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String" defaultValueString="0"/>
+        <attribute name="isfamily" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isfriend" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="ispublic" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="owner" attributeType="String" defaultValueString=""/>
+        <attribute name="secret" attributeType="String" defaultValueString=""/>
+        <attribute name="server" attributeType="String" defaultValueString=""/>
+        <attribute name="title" attributeType="String" defaultValueString=""/>
+    </entity>
+    <elements>
+        <element name="SavedPhoto" positionX="-63" positionY="-18" width="128" height="164"/>
+    </elements>
+</model>

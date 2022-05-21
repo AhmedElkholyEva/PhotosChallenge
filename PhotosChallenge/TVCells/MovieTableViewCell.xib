@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="164" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="PhotosChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TNS-Mp-0bZ">
+                        <rect key="frame" x="8" y="8" width="304" height="148"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2HO-Dp-l6V">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="8"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="gyZ-UD-qTg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywD-cs-WQd">
+                                <rect key="frame" x="0.0" y="8" width="304" height="20.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cC-Wx-jcg">
+                                <rect key="frame" x="0.0" y="28.5" width="304" height="8"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="KAf-Nv-SCT"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="movie-clapper-open" translatesAutoresizingMaskIntoConstraints="NO" id="OB0-jN-Fq9">
+                                <rect key="frame" x="8" y="36.5" width="256" height="103.5"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNn-te-uUr">
+                                <rect key="frame" x="0.0" y="140" width="304" height="8"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="CpG-c3-1v4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OB0-jN-Fq9" firstAttribute="leading" secondItem="TNS-Mp-0bZ" secondAttribute="leading" constant="8" id="CuP-OT-RtW"/>
+                            <constraint firstAttribute="trailing" secondItem="OB0-jN-Fq9" secondAttribute="trailing" constant="8" id="ovJ-ng-ieH"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TNS-Mp-0bZ" secondAttribute="bottom" constant="8" id="QA4-WV-0nt"/>
+                    <constraint firstAttribute="trailing" secondItem="TNS-Mp-0bZ" secondAttribute="trailing" constant="8" id="U2K-yK-T6g"/>
+                    <constraint firstItem="TNS-Mp-0bZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="doE-Zf-cB4"/>
+                    <constraint firstItem="TNS-Mp-0bZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="wzf-03-raD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration" identifier="MovieTableViewCell"/>
+            <connections>
+                <outlet property="img" destination="OB0-jN-Fq9" id="TUz-S0-ECl"/>
+                <outlet property="lblTitle" destination="ywD-cs-WQd" id="Ofu-zl-XjH"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="movie-clapper-open" width="256" height="256"/>
+    </resources>
+</document>
